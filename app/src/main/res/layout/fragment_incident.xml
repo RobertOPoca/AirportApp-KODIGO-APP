@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.IncidentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/incident.title"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="25dp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incident.flight"
+                    android:textAlignment="center"
+                    android:layout_marginTop="25dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txvFlightIncident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/airline.form.title"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="25dp">
+                </TextView>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/incident.desc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIncidentDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/incident.date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtIncidentDate"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIncidentDate"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    app:icon="@drawable/ic_date"
+                    app:iconTint="#424242"
+                    app:rippleColor="#424242"
+                    app:strokeColor="#424242"
+                    app:strokeWidth="3dp"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/incident.time"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtIncidentTime"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIncidentTime"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    app:icon="@drawable/ic_date"
+                    app:iconTint="#424242"
+                    app:rippleColor="#424242"
+                    app:strokeColor="#424242"
+                    app:strokeWidth="3dp"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    />
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveIncident"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/airline.save"
+                android:textColor="#424242"
+                app:icon="@drawable/ic_save"
+                app:iconTint="#424242"
+                app:rippleColor="#424242"
+                app:strokeColor="#424242"
+                app:strokeWidth="3dp"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/incidentRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

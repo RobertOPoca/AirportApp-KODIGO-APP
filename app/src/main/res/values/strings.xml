@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">AirportApp</string>
+
+    <string name="menu.home">Flights</string>
+    <string name="menu.airline">Airlines</string>
+    <string name="menu.airplane">Airplanes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Flights -->
+    <string name="flight.title">FLIGHTS</string>
+    <string name="flight.create">Create</string>
+    <string name="flight.filter.status">Filter status</string>
+    <string name="flight.report">Generate report</string>
+    <string name="flight.load.excel">Load excel</string>
+    <string name="flight.number">Flight number: </string>
+    <string name="flight.departure.City">Departure city</string>
+    <string name="flight.departure.country">Departure country</string>
+    <string name="flight.status">Status</string>
+    <string name="flight.Airplane">Airplane</string>
+    <string name="flight.departure">Departure location</string>
+    <string name="flight.departure.time">Departure time</string>
+    <string name="flight.arrival.location">Arrival location</string>
+    <string name="flight.arrival.time">Arrival time</string>
+    <string name="flight.form.title">FLIGHTS\' FORM</string>
+    <string name="flight.form.airline">Select airline</string>
+    <string name="flight.form.airplane">Select airplane</string>
+    <string name="flight.form.depart.country">Departure country</string>
+    <string name="flight.form.depart.city">Departure city</string>
+    <string name="flight.form.arrival.country">Arrival country</string>
+    <string name="flight.form.arrival.city">Arrival City</string>
+    <string name="flight.form.status">Status</string>
+    <string name="flight.form.dept.date">Departure date</string>
+    <string name="flight.form.dept.time">Departure time</string>
+    <string name="flight.form.arrival.date">Arrival date</string>
+    <string name="flight.form.arrival.time">Arrival time</string>
+    <string name="flight.form.date.btn">Select</string>
+    <string name="flight.form.time.btn">Select</string>
+    <string name="flight.form.incident.btn">Incidents</string>
+    <string name="flight.save">Save</string>
+
+
+    <string name="airline.title">AIRLINES</string>
+    <string name="airline.create">Create airline</string>
+    <string name="airline.save">Save</string>
+    <string name="airline.form.title">AIRLINES\' FORM</string>
+    <string name="airline.form.name">Airline name </string>
+
+
+    <string name="incident.title">INCIDENTS</string>
+    <string name="incident.flight">Number flight: </string>
+    <string name="incident.desc">Description</string>
+    <string name="incident.date">Incident date</string>
+    <string name="incident.time">Incident time</string>
+
+
+</resources>
